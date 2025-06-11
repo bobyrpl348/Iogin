@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url('https://source.unsplash.com/1600x900/?nature,blur') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-logo img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0073aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005177;
+}
+
+.lost-password {
+  margin-top: 10px;
+}
+
+.lost-password a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.lost-password a:hover {
+  text-decoration: underline;
+}
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - WordPress</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Tinggi viewport */
+  background-color: #f0f0f0;
+}
+
+.kotak {
+  width: 300px;
+  height: 200px;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+    <form class="login-form">
+      <label for="username">Username or Email Address</label>
+      <input type="text" id="username" name="username" value="admin" />
+
+      <label for="password">Password</label>
+      <div class="password-field">
+        <input type="password" id="password" name="password" value="password123" />
+        <span class="toggle-password">&#128065;</span>
+      </div>
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+      </div>
+
+      <button type="submit">Log In</button>
+    </form>
+    <div class="lost-password">
+      <a href="#">Lost your password?</a>
+    </div>
+  </div>
+</body>
+</html>
